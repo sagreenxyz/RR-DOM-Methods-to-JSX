@@ -1,7 +1,6 @@
 let koalaContainer = (
-
     <div className="ui items">
-        {koalas.map(koala => {
+        {koalas.map(koala => (
             <div className="item" style={{ cursor: 'pointer' }}>
                 <div className="image">
                     <img src={koala.imageURL}></img>
@@ -15,6 +14,8 @@ let koalaContainer = (
                     </div>
                 </div>
             </div>
-        })}
+        ))}
     </div>
 )
+
+document.body.append(koalaContainer)
