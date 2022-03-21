@@ -1,6 +1,4 @@
-let koalaContainer = <div></div>
-
-koalaContainer.setAttribute('class', 'ui items')
+let koalaContainer = <div className="ui items"></div>
 
 // Koala Card
 // koalas are in './public/koalas.js'
