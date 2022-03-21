@@ -6,28 +6,21 @@ koalas.forEach(koala => {
     let koalaCard = <div className="item" style={{cursor: 'pointer'}}></div>
 
     // Koala Card Image
-    let imageContainer = <div></div>
-    let koalaImage = <img></img>
-
-    imageContainer.setAttribute('class', 'image')
-
-    koalaImage.setAttribute('src', koala.imageURL)
+    let imageContainer = <div className="image"></div>
+    let koalaImage = <img src={koala.imageURL}></img>
 
     imageContainer.append(koalaImage)
 
     // Koala Card Content
-    let koalaContent = <div></div>
-    koalaContent.setAttribute('class', 'content')
+    let koalaContent = <div className="content"></div>
 
-    let header = <div></div>
-    header.setAttribute('class', 'header')
+    let header = <div className="header"></div>
     header.append(koala.name)
 
     let descriptionParagraph = <p></p>
     descriptionParagraph.append(koala.description)
 
-    let descriptionContainer = <div></div>
-    descriptionContainer.setAttribute('class', 'description')
+    let descriptionContainer = <div className="description"></div>
     descriptionContainer.append(descriptionParagraph)
 
     koalaContent.append(
