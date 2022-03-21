@@ -4,10 +4,9 @@ let koalaContainer = <div className="ui items"></div>
 // koalas are in './public/koalas.js'
 koalas.forEach(koala => {
     let koalaCard = <div className="item" style={{cursor: 'pointer'}}></div>
-    koalaCard.style.cursor = 'pointer';
 
     // Koala Card Image
-    let imageContainer = document.createElement('div')
+    let imageContainer = <div></div>
     let koalaImage = document.createElement('img')
 
     imageContainer.setAttribute('class', 'image')
@@ -17,17 +16,17 @@ koalas.forEach(koala => {
     imageContainer.append(koalaImage)
 
     // Koala Card Content
-    let koalaContent = document.createElement('div')
+    let koalaContent = <div></div>
     koalaContent.setAttribute('class', 'content')
 
-    let header = document.createElement('div')
+    let header = <div></div>
     header.setAttribute('class', 'header')
     header.append(koala.name)
 
     let descriptionParagraph = document.createElement('p')
     descriptionParagraph.append(koala.description)
 
-    let descriptionContainer = document.createElement('div')
+    let descriptionContainer = <div></div>
     descriptionContainer.setAttribute('class', 'description')
     descriptionContainer.append(descriptionParagraph)
 
