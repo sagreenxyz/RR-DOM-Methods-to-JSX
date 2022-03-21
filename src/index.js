@@ -1,4 +1,4 @@
-let koalaContainer = document.createElement('div')
+let koalaContainer = <div></div>
 
 koalaContainer.setAttribute('class', 'ui items')
 
