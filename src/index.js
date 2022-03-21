@@ -3,8 +3,7 @@ let koalaContainer = <div className="ui items"></div>
 // Koala Card
 // koalas are in './public/koalas.js'
 koalas.forEach(koala => {
-    let koalaCard = document.createElement('div')
-    koalaCard.setAttribute('class', 'item')
+    let koalaCard = <div className="item" style={{cursor: 'pointer'}}></div>
     koalaCard.style.cursor = 'pointer';
 
     // Koala Card Image
