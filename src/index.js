@@ -23,7 +23,7 @@ koalas.forEach(koala => {
     header.setAttribute('class', 'header')
     header.append(koala.name)
 
-    let descriptionParagraph = document.createElement('p')
+    let descriptionParagraph = <p></p>
     descriptionParagraph.append(koala.description)
 
     let descriptionContainer = <div></div>
