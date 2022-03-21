@@ -7,7 +7,7 @@ koalas.forEach(koala => {
 
     // Koala Card Image
     let imageContainer = <div></div>
-    let koalaImage = document.createElement('img')
+    let koalaImage = <img></img>
 
     imageContainer.setAttribute('class', 'image')
 
